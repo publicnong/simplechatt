@@ -102,7 +102,7 @@ var chatData = Backbone.Model.extend({
 });
 
 var app = {
-  socket : io.connect('http://localhost'),
+  socket : io.connect('http://simplechatt.herokuapp.com'),
   socketEmitter: function(method,data){
     this.socket.emit(method,data);
   },
