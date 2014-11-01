@@ -6,6 +6,6 @@ var chatServer = require('http').createServer(app);
 
 var io = require('socket.io').listen(chatServer);
 
-chatServer.listen(30000);
+chatServer.listen(process.env.PORT || 3000);
 
 var chatjs = require('../chat.js')(io);
