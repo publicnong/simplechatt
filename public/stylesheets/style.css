@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.messages{
+  height:70vh;
+  overflow-y:scroll;
+}
+
+.padding-5{
+  padding:5px;
+}
+
+.padding-40{
+  padding:40px 0;
+}
+.margin-t-100{
+  margin-top:100px;
+}
+.bg-concrete{
+background-color:#bdc3c7;
+}
+.bg-midnight-blue{
+  background-color:#2d4052 !important;
+  color:#ecf0f1;
+}
+input[type=text] {
+color:black !important;
+border:1px solid #eaeaea;
+padding:10px;
+margin-bottom:10px;
+}
+input[type=submit] {
+border-radius:5px;
+border:0;
+padding:8px 18px;
+}

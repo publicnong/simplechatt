@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+var chatServer = require('http').createServer(app);
+
+var io = require('socket.io').listen(chatServer);
+
+chatServer.listen(30000);
+
+var chatjs = require('../chat.js')(io);
